@@ -12,6 +12,8 @@ const float TEXT_HEIGHT = 14;
 
 @property (nonatomic, strong) CALayer *sliderLine;
 @property (nonatomic, strong) CALayer *sliderLineBetweenHandles;
+@property (nonatomic, strong) CALayer *sliderLineBetweenMinAndHandles;
+@property (nonatomic, strong) CALayer *sliderLineBetweenMaxAndHandles;
 
 @property (nonatomic, strong) CALayer *leftHandle;
 @property (nonatomic, assign) BOOL leftHandleSelected;
