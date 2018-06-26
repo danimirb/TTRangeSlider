@@ -287,6 +287,11 @@ static const CGFloat kLabelsFontSize = 12.0f;
     
     //positioning for the dist slider line
     self.sliderLineBetweenHandles.frame = CGRectMake(self.leftHandle.position.x, self.sliderLine.frame.origin.y, self.rightHandle.position.x-self.leftHandle.position.x, self.lineHeight);
+	//	Danimir
+	//positioning for the dist slider line betwen min and handle
+	self.sliderLineBetweenMinAndHandles.frame = CGRectMake(0, 0, self.leftHandle.position.x, self.lineHeight);
+	//positioning for the dist slider line betwen max and handle
+	self.sliderLineBetweenMaxAndHandles.frame = CGRectMake((self.rightHandle.position.x - self.handleDiameter/2), 0, (self.sliderLine.frame.size.width - self.rightHandle.position.x)+self.handleDiameter/2, self.lineHeight);
 }
 
 - (void)updateLabelPositions {
