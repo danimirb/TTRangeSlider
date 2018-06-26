@@ -151,6 +151,16 @@ IB_DESIGNABLE
 @property (nonatomic, strong) IBInspectable UIColor *tintColorBetweenHandles;
 
 /**
+ *Set slider line tint color between min value and handles
+ */
+@property (nonatomic, strong) UIColor *tintColorBetweenMinAndHandles;
+
+/**
+ *Set slider line tint color between min value and handles
+ */
+@property (nonatomic, strong) UIColor *tintColorBetweenMaxAndHandles;
+
+/**
  *Set the slider line height (default 1.0)
  */
 @property (nonatomic, assign) IBInspectable CGFloat lineHeight;

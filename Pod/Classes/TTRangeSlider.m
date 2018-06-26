@@ -658,6 +658,15 @@ static const CGFloat kLabelsFontSize = 12.0f;
     self.sliderLineBetweenHandles.backgroundColor = [tintColorBetweenHandles CGColor];
 }
 
+-(void)setTintColorBetweenMaxAndHandles:(UIColor *)tintColorBetweenMaxAndHandles{
+	_tintColorBetweenMaxAndHandles = tintColorBetweenMaxAndHandles;
+	self.sliderLineBetweenMaxAndHandles.backgroundColor = [tintColorBetweenMaxAndHandles CGColor];
+}
+-(void)setTintColorBetweenMinAndHandles:(UIColor *)tintColorBetweenMinAndHandles{
+	_tintColorBetweenMinAndHandles = tintColorBetweenMinAndHandles;
+	self.sliderLineBetweenMinAndHandles.backgroundColor = [tintColorBetweenMinAndHandles CGColor];
+}
+
 -(void)setLineHeight:(CGFloat)lineHeight{
     _lineHeight = lineHeight;
     [self setNeedsLayout];
